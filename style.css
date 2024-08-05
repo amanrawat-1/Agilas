@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Luckiest+Guy&family=Mooli&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Rubik+Doodle+Shadow&display=swap');
+
+/* Ensure the body covers the entire viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Full-screen video container */
+.video-background {
+    position: absolute; /* Cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide any overflow */
+    z-index: -2; /* Place behind other content */
+}
+
+/* Style for the video */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container */
+    transform: translate(-50%, -50%); /* Center the video */
+}
+
+/* Gradient overlay */
+.gradient-overlay {
+    position: absolute; /* Cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3), /* Light black with 30% opacity */
+        rgba(0, 0, 0, 0.6)  /* Darker black with 60% opacity */
+    );
+    z-index: -1; /* Place above the video but below the content */
+}
+
+/* Content container */
+.content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the gradient overlay */
+    color: white; /* Example text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+
+.brand {
+    position: absolute; 
+    top: 0px; 
+    left: 30px; 
+    z-index: 1; 
+}
+
+.brand img {
+    width: 135px;
+    height: auto; 
+}
+
+.header {
+      width: 40%;
+      position: absolute;
+      top: 45%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 40px;
+      letter-spacing: 3px;
+      z-index: 3;
+}
+
+h1 span {
+      -webkit-text-stroke: 1px #fff;
+      color: rgba(0,0,0,0);
+}
